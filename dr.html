@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Driver Drowsiness Detection</title>
+  <link rel="stylesheet" href="dr.css">
+</head>
+<body>
+
+  <header class="hero">
+    <h1>Driver Drowsiness Detection</h1>
+    <p>居眠り運転検知・警告システム</p>
+  </header>
+
+ <section class="gallery">
+
+  <div class="card">
+    <img src="1.png" alt="Eye detection">
+    <div class="content">
+      <h3></h3>
+      <p>AAA財団の推計によると、世界全体で毎年約32万8,000件の交通事故が、
+運転中の眠気や居眠り運転によって発生しているとされています。
+これらの事故により、約11万人が負傷し、約6,400人が命を落としています。
+<p>トラック運転手の約65％が運転中に眠気を経験しており、
+約半数が居眠り運転の経験を持っています。</p>
+</p>
+    </div>
+  </div>
+
+  <div class="card reverse">
+    <img src="2.jpg" alt="Yawning detection">
+    <div class="content">
+      <h3></h3>
+      <p>トラック運転手の約65％が運転中に眠気を経験しており、
+約半数が居眠り運転の経験を持っています。</p>
+    </div>
+  </div>
+
+  
+  <div class="video-container">
+    <video autoplay loop muted controls>
+      <source src="aaa.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+  <div class="card">
+    <img src="3.jpeg" alt="Head movement">
+    <div class="content">
+      <h3></h3>
+      <p>ほんシステムは、ドライバーの かおの うごきを けんちし、
+       めが よんびょう いじょう とじられた ばあいには けいこくおんを はっして
+       ドライバーを かくせい させます。</p>
+      <p> また、あくびが3回以上検出された場合、
+ドライバーが疲労状態にあると判断し、注意喚起のアラートを作動させます。</p>
+    </div>
+  </div>
+
+  <div class="card reverse">
+    <img src="4.jpg" alt="Alert system">
+    <div class="content">
+      <h3></h3>
+      <p>🚗 居眠り運転は交通事故の約20〜30％に関与しています.
+
+<p>⏰ 4秒以上の目の閉鎖は、事故リスクを大幅に高めます</p>
+
+<p>📉 眠気検知システムにより、事故リスクを約30〜40％低減可能</p>
+
+<p>🚨 リアルタイム警告で、事故前にドライバーを覚醒</p>
+
+<p><🛣️ 道路の安全性向上とドライバーの命を守ることに貢献.</p>
+    </div>
+  </div>
+
+ <div class="card">
+  <img src="5.jpg" alt="Safe driving">
+  <div class="content">
+    <h3></h3>
+    <p>継続的なドライバー監視により、命を守ります。</p>
+
+    <button class="btn" onclick="startSystem()">
+      Start Detection
+    </button>
+  </div>
+</div>
+<script>
+function startSystem() {
+  fetch("/start")
+    .then(() => {
+      alert("System started");
+    })
+    .catch(() => {
+      alert("Backend not running");
+    });
+}
+</script>
+
+  <footer>
+    <p>© 2026 Driver Safety Project</p>
+  </footer>
+
+</body>
+</html>

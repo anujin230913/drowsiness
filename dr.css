@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.hero p {
+  color: #aaa;
+  margin-top: 10px;
+}
+
+/* Gallery */
+.gallery {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  background-color: #161616;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+
+/* image */
+.card img {
+  width: 320px;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* text */
+.card .content {
+  padding: 30px;
+}
+
+.card h3 {
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #bbb;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* 🔁 reverse layout */
+.card.reverse {
+  flex-direction: row-reverse;
+}
+
+/* 📱 Mobile */
+@media (max-width: 768px) {
+  .card,
+  .card.reverse {
+    flex-direction: column;
+  }
+
+  .card img {
+    width: 100%;
+    height: 220px;
+  }
+}
+.video-container {
+  max-width: 1100px;
+  margin: 0 auto 80px;
+  padding: 0 20px;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  background-color: #000;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  display: block;
+
+}
+
+
+
